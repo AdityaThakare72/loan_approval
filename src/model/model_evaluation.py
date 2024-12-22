@@ -60,7 +60,7 @@ def save_metrics(metrics, file_path):
 def main():
     try:
         # Load model
-        rf = load_model('model.pkl')
+        rf = load_model('models/model.pkl')
 
         # Load test data
         test_data = load_data('./data/processed/test_processed.csv')
@@ -83,7 +83,7 @@ def main():
         }
 
         # Save metrics to file
-        save_metrics(metrics_dict, 'metrics.json')
+        save_metrics(metrics_dict, 'models/metrics.json')
 
     except Exception as e:
         logging.error(f"Process failed: {e}")

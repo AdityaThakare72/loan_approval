@@ -83,7 +83,7 @@ def main():
         rf_model = train_model(x_train, y_train, params)
 
         # Save model
-        save_model(rf_model, 'model.pkl')
+        save_model(rf_model, 'models/model.pkl')
 
     except Exception as e:
         logging.error(f"Process failed: {e}")
